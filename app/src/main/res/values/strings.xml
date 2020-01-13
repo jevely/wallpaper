@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trendy HD Wallpaper</string>
+    <string name="content_bt_1">set</string>
+    <string name="content_bt_2">save</string>
+    <string name="content_set_background">set background</string>
+    <string name="content_set_screen">set screen</string>
+    <string name="content_set_both">set both</string>
+</resources>
