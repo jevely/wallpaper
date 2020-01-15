@@ -27,29 +27,13 @@
 
     </RelativeLayout>
 
-
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipeRefreshLayout"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recyclerview"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/main_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-    <!--    <com.noot.brary.newview.NewBanner-->
-    <!--        android:id="@+id/bannerview"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

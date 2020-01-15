@@ -40,7 +40,7 @@ class DataTool {
             if (imageList.contains(url)) {
                 continue
             }
-            imageList.add(0, url)
+            imageList.add(url)
         }
     }
 
