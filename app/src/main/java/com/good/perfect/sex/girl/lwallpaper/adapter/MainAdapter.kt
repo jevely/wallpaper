@@ -49,7 +49,7 @@ class MainAdapter(val context: Context) : RecyclerView.Adapter<MainAdapter.MainV
             Glide
                 .with(context)
                 .load(imageUrl)
-                .placeholder(R.mipmap.ic_launcher)
+                .placeholder(R.mipmap.defult_img)
                 .override((getScreen().x / 2.0F).toInt(), (getScreen().y / 2.0F).toInt())
                 .centerCrop()
                 .addListener(object : RequestListener<Drawable> {
