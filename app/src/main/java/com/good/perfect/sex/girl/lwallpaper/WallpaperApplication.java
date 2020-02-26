@@ -6,6 +6,9 @@ import android.content.Context;
 import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
+import com.alite.qeuaed.manager.NliManager;
+import com.good.perfect.sex.girl.lwallpaper.util.DataTool;
+
 import java.util.List;
 
 public class WallpaperApplication extends MultiDexApplication {
@@ -35,7 +38,8 @@ public class WallpaperApplication extends MultiDexApplication {
             }
         }
 
-//        AgesTool.initAll(this, false, false, "9TzPV9MdKa58eEqWyyfLF", "");
+        NliManager.init(this, true, false, "", "");
+        DataTool.Companion.getInstance().init();
     }
 
     /**
