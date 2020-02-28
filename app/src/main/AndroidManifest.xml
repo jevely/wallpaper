@@ -21,6 +21,10 @@
         android:theme="@style/AppTheme">
 
         <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-1103710009917544~7056171204" />
 
@@ -30,7 +34,7 @@
             android:name=".activity.SplashActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <activity-alias
             android:name="SS"
@@ -50,7 +54,7 @@
             android:name=".activity.MainActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait">
+            android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -59,7 +63,7 @@
         <activity
             android:name=".activity.ContentActivity"
             android:excludeFromRecents="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
     </application>
 
 </manifest>

@@ -5,4 +5,6 @@
     <string name="content_set_background">set background</string>
     <string name="content_set_screen">set screen</string>
     <string name="content_set_both">set both</string>
+
+    <string name="facebook_app_id">509118243318148</string>
 </resources>

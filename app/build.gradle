@@ -68,6 +68,8 @@ dependencies {
 
     //applovin
     implementation 'com.applovin:applovin-sdk:9.10.3'
+
+    implementation 'com.facebook.android:facebook-android-sdk:5.12.1'
 }
 
 //apply plugin: 'com.google.gms.google-services'
