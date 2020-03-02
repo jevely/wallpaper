@@ -72,7 +72,7 @@ class MainAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.View
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is MainViewHolder) {
-            holder.setData(DataTool.getInstance().getData(position).path)
+            holder.setData(DataTool.getInstance().getData(position).imageId)
         } else if (holder is AdViewHolder) {
             Logger.d("我是列表中的广告 onBindViewHolder")
             holder.initAd(DataTool.getInstance().getData(position))
@@ -193,7 +193,7 @@ class MainAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.View
 
         val main_adapter_iv = itemView.findViewById<ImageView>(R.id.main_adapter_iv)
 
-        fun setData(imageUrl: String) {
+        fun setData(imageUrl: Int) {
 
             main_adapter_iv.setOnClickListener {
                 val intent = Intent(context, ContentActivity::class.java)

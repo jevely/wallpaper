@@ -30,16 +30,6 @@
             android:text="@string/content_bt_1"
             android:textColor="#ffffff" />
 
-        <Button
-            android:id="@+id/content_save"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:background="@drawable/bt_back"
-            android:text="@string/content_bt_2"
-            android:textColor="#ffffff" />
-
     </LinearLayout>
 
     <LinearLayout
