@@ -42,34 +42,12 @@ class SplashActivity : BaseActivity() {
     }
 
     fun animatorStart() {
-        val set = AnimatorSet()
         val set2 = AnimatorSet()
-        set.playTogether(
-            ObjectAnimator.ofFloat(imageView, "translationY", 100f, 0f),
-            ObjectAnimator.ofFloat(imageView, "alpha", 0f, 1f)
-        )
+
         set2.playTogether(
             ObjectAnimator.ofFloat(textView, "translationY", 100f, 0f),
             ObjectAnimator.ofFloat(textView, "alpha", 0f, 1f)
         )
-        set.addListener(object : Animator.AnimatorListener {
-            override fun onAnimationRepeat(animation: Animator?) {
-
-            }
-
-            override fun onAnimationEnd(animation: Animator?) {
-                set2.setDuration(1500).start()
-            }
-
-            override fun onAnimationCancel(animation: Animator?) {
-
-            }
-
-            override fun onAnimationStart(animation: Animator?) {
-
-            }
-
-        })
 
         set2.addListener(object : Animator.AnimatorListener {
             override fun onAnimationRepeat(animation: Animator?) {
@@ -98,7 +76,7 @@ class SplashActivity : BaseActivity() {
 
         })
 
-        set.setDuration(1500).start()
+        set2.setDuration(1500).start()
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {

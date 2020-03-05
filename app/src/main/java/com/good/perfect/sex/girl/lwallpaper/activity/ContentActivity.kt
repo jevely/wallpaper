@@ -7,11 +7,8 @@ import android.view.View
 import android.widget.*
 import com.bumptech.glide.Glide
 import com.good.perfect.sex.girl.lwallpaper.BaseActivity
-import com.good.perfect.sex.girl.lwallpaper.DownloadCallBack
 import com.good.perfect.sex.girl.lwallpaper.R
-import com.good.perfect.sex.girl.lwallpaper.WallpaperApplication
 import com.good.perfect.sex.girl.lwallpaper.util.*
-import java.io.File
 
 class ContentActivity : BaseActivity(), View.OnClickListener {
 

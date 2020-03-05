@@ -4,7 +4,7 @@ import android.util.Log
 
 object Logger {
 
-    private const val TAG = "LJW"
+    private const val TAG = "UUE"
     private const val DEBUG = true
 
     fun d(content : String){

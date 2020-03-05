@@ -54,12 +54,10 @@ class MainAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.View
                     val newFbNativeAd = NliManager.getFbAppAd()
                     if (newFbNativeAd != null) {
                         content.fbNativeAd = newFbNativeAd
-                        Logger.d("我是列表中的广告 getItemViewType")
                         return 2
                     }
                 }
             } else {
-                Logger.d("我是列表中的广告 getItemViewType 直接是现成的")
                 return 2
             }
         }
@@ -91,11 +89,6 @@ class MainAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.View
 
                 val adView =
                     parentView.findViewById<NativeAdLayout>(R.id.iuw_moni_native_ad_container)
-
-                val layoutParams = adView.layoutParams
-                layoutParams.width = (getScreen().x / 2.0F).toInt()
-                layoutParams.height = (getScreen().y / 2.0F).toInt()
-                adView.layoutParams = layoutParams
 
                 // Add the AdOptionsView
                 val adChoicesContainer =
