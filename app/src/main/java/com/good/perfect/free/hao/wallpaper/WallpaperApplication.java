@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper;
+package com.good.perfect.free.hao.wallpaper;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -7,7 +7,7 @@ import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
 import com.alite.qeuaed.manager.NliManager;
-import com.good.perfect.sex.girl.lwallpaper.util.DataTool;
+import com.good.perfect.free.hao.wallpaper.util.DataTool;
 
 import java.util.List;
 

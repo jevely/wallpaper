@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper.util
+package com.good.perfect.free.hao.wallpaper.util
 
 import android.util.Log
 

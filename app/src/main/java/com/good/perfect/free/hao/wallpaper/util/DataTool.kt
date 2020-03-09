@@ -1,7 +1,7 @@
-package com.good.perfect.sex.girl.lwallpaper.util
+package com.good.perfect.free.hao.wallpaper.util
 
-import com.good.perfect.sex.girl.lwallpaper.R
-import com.good.perfect.sex.girl.lwallpaper.content.WallPaperContent
+import com.good.perfect.free.hao.wallpaper.R
+import com.good.perfect.free.hao.wallpaper.content.WallPaperContent
 import kotlin.random.Random
 
 class DataTool {
@@ -57,6 +57,10 @@ class DataTool {
         allList.add(content12)
         val content13 = WallPaperContent(R.mipmap.tmage_13)
         allList.add(content13)
+        val content14 = WallPaperContent(R.mipmap.tmage_14)
+        allList.add(content14)
+        val content15 = WallPaperContent(R.mipmap.tmage_15)
+        allList.add(content15)
     }
 
     fun initData(startCount: Int, addCount: Int, clean: Boolean) {

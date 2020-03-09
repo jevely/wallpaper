@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper.adapter
+package com.good.perfect.free.hao.wallpaper.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -18,14 +18,14 @@ import com.bumptech.glide.request.target.Target
 import com.facebook.ads.AdOptionsView
 import com.facebook.ads.MediaView
 import com.facebook.ads.NativeAdLayout
-import com.good.perfect.sex.girl.lwallpaper.R
-import com.good.perfect.sex.girl.lwallpaper.WallpaperApplication
-import com.good.perfect.sex.girl.lwallpaper.activity.ContentActivity
-import com.good.perfect.sex.girl.lwallpaper.content.WallPaperContent
-import com.good.perfect.sex.girl.lwallpaper.util.DataTool
-import com.good.perfect.sex.girl.lwallpaper.util.DeviceUtils
-import com.good.perfect.sex.girl.lwallpaper.util.Logger
-import com.good.perfect.sex.girl.lwallpaper.util.getScreen
+import com.good.perfect.free.hao.wallpaper.R
+import com.good.perfect.free.hao.wallpaper.WallpaperApplication
+import com.good.perfect.free.hao.wallpaper.activity.ShowActivity
+import com.good.perfect.free.hao.wallpaper.content.WallPaperContent
+import com.good.perfect.free.hao.wallpaper.util.DataTool
+import com.good.perfect.free.hao.wallpaper.util.DeviceUtils
+import com.good.perfect.free.hao.wallpaper.util.Logger
+import com.good.perfect.free.hao.wallpaper.util.getScreen
 
 class MainAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -189,7 +189,7 @@ class MainAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.View
         fun setData(imageUrl: Int) {
 
             main_adapter_iv.setOnClickListener {
-                val intent = Intent(context, ContentActivity::class.java)
+                val intent = Intent(context, ShowActivity::class.java)
                 intent.putExtra("url", imageUrl)
                 context.startActivity(intent)
             }

@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper
+package com.good.perfect.free.hao.wallpaper
 
 import android.app.Activity
 import android.content.Context

@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper.util
+package com.good.perfect.free.hao.wallpaper.util
 
 import android.annotation.TargetApi
 import android.app.WallpaperManager
@@ -8,10 +8,8 @@ import android.graphics.Point
 import android.graphics.drawable.BitmapDrawable
 import android.os.Build
 import android.os.Environment
-import com.good.perfect.sex.girl.lwallpaper.R
-import com.good.perfect.sex.girl.lwallpaper.WallpaperApplication
+import com.good.perfect.free.hao.wallpaper.WallpaperApplication
 import java.io.File
-import java.io.FileOutputStream
 
 fun getScreen(): Point {
     val dm = WallpaperApplication.getWallpaperContext().resources.displayMetrics

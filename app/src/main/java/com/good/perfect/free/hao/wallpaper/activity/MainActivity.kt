@@ -1,20 +1,15 @@
-package com.good.perfect.sex.girl.lwallpaper.activity
+package com.good.perfect.free.hao.wallpaper.activity
 
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.good.perfect.sex.girl.lwallpaper.BaseActivity
-import com.good.perfect.sex.girl.lwallpaper.R
-import com.good.perfect.sex.girl.lwallpaper.adapter.MainAdapter
-import com.good.perfect.sex.girl.lwallpaper.other.ScaleInTransformer
-import com.good.perfect.sex.girl.lwallpaper.util.DataTool
-import com.good.perfect.sex.girl.lwallpaper.util.Logger
-import kotlinx.android.synthetic.main.activity_main.*
+import com.good.perfect.free.hao.wallpaper.BaseActivity
+import com.good.perfect.free.hao.wallpaper.R
+import com.good.perfect.free.hao.wallpaper.adapter.MainAdapter
+import com.good.perfect.free.hao.wallpaper.other.ScaleInTransformer
+import com.good.perfect.free.hao.wallpaper.util.DataTool
 
 
 class MainActivity : BaseActivity() {
@@ -25,7 +20,7 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        DataTool.getInstance().initData(0, 13, true)
+        DataTool.getInstance().initData(0, 15, true)
         init()
     }
 

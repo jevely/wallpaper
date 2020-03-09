@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper.other
+package com.good.perfect.free.hao.wallpaper.other
 
 import android.os.Build
 import android.view.View

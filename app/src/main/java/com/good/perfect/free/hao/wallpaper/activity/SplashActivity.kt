@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper.activity
+package com.good.perfect.free.hao.wallpaper.activity
 
 import android.animation.Animator
 import android.animation.AnimatorSet
@@ -9,9 +9,8 @@ import android.os.Handler
 import android.view.KeyEvent
 import android.widget.ImageView
 import android.widget.TextView
-import com.good.perfect.sex.girl.lwallpaper.BaseActivity
-import com.good.perfect.sex.girl.lwallpaper.R
-import kotlinx.android.synthetic.main.activity_splash.*
+import com.good.perfect.free.hao.wallpaper.BaseActivity
+import com.good.perfect.free.hao.wallpaper.R
 
 class SplashActivity : BaseActivity() {
 

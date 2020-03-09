@@ -1,4 +1,4 @@
-package com.good.perfect.sex.girl.lwallpaper.activity
+package com.good.perfect.free.hao.wallpaper.activity
 
 import android.graphics.BitmapFactory
 import android.os.*
@@ -6,11 +6,11 @@ import android.view.KeyEvent
 import android.view.View
 import android.widget.*
 import com.bumptech.glide.Glide
-import com.good.perfect.sex.girl.lwallpaper.BaseActivity
-import com.good.perfect.sex.girl.lwallpaper.R
-import com.good.perfect.sex.girl.lwallpaper.util.*
+import com.good.perfect.free.hao.wallpaper.BaseActivity
+import com.good.perfect.free.hao.wallpaper.R
+import com.good.perfect.free.hao.wallpaper.util.*
 
-class ContentActivity : BaseActivity(), View.OnClickListener {
+class ShowActivity : BaseActivity(), View.OnClickListener {
 
     private lateinit var content_image: ImageView
     private lateinit var content_set: Button

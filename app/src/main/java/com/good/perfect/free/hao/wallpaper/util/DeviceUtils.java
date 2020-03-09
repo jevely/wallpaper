@@ -1,10 +1,10 @@
-package com.good.perfect.sex.girl.lwallpaper.util;
+package com.good.perfect.free.hao.wallpaper.util;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
 
-import com.good.perfect.sex.girl.lwallpaper.WallpaperApplication;
+import com.good.perfect.free.hao.wallpaper.WallpaperApplication;
 
 
 /**

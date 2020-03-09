@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.good.perfect.sex.girl.lwallpaper">
+    package="com.good.perfect.free.hao.wallpaper">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -13,7 +13,7 @@
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
     <application
-        android:name=".WallpaperApplication"
+        android:name="com.good.perfect.free.hao.wallpaper.WallpaperApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,10 +28,10 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-1103710009917544~7056171204" />
 
-        <activity android:name=".BaseActivity" />
+        <activity android:name="com.good.perfect.free.hao.wallpaper.BaseActivity" />
 
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.good.perfect.free.hao.wallpaper.activity.SplashActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:screenOrientation="nosensor" />
@@ -42,7 +42,7 @@
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:targetActivity=".activity.SplashActivity">
+            android:targetActivity="com.good.perfect.free.hao.wallpaper.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,7 +51,7 @@
         </activity-alias>
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.good.perfect.free.hao.wallpaper.activity.MainActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:screenOrientation="nosensor">
@@ -61,7 +61,7 @@
         </activity>
 
         <activity
-            android:name=".activity.ContentActivity"
+            android:name="com.good.perfect.free.hao.wallpaper.activity.ShowActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="nosensor" />
     </application>
