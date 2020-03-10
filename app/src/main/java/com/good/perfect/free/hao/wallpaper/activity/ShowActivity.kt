@@ -1,6 +1,7 @@
 package com.good.perfect.free.hao.wallpaper.activity
 
 import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.*
 import android.view.KeyEvent
 import android.view.View
@@ -17,6 +18,7 @@ class ShowActivity : BaseActivity(), View.OnClickListener {
     private val SET_REQUEST = 1
     private val SAVE_REQUEST = 2
     private var url: Int = -1
+    private var imageUri: Uri? = null
     private lateinit var imageName: String
 
     private lateinit var content_set_setback: Button
@@ -30,7 +32,9 @@ class ShowActivity : BaseActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_content)
 
-        url = intent.getIntExtra("url",-1)
+        url = intent.getIntExtra("url", -1)
+        imageUri = Uri.parse(intent.getStringExtra("uri"))
+
         imageName = "wallpaper"
 
         content_image = findViewById(R.id.content_image)
@@ -47,11 +51,20 @@ class ShowActivity : BaseActivity(), View.OnClickListener {
         content_set_setboth.setOnClickListener(this)
         content_set_ll.setOnClickListener(this)
 
-        Glide
-            .with(this)
-            .load(url)
-            .centerCrop()
-            .into(content_image)
+        if (url != -1) {
+            Glide
+                .with(this)
+                .load(url)
+                .centerCrop()
+                .into(content_image)
+        } else {
+            Glide
+                .with(this)
+                .load(imageUri)
+                .centerCrop()
+                .into(content_image)
+        }
+
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
             content_set_setscreen.visibility = View.GONE
@@ -68,19 +81,31 @@ class ShowActivity : BaseActivity(), View.OnClickListener {
                 content_set_ll.visibility = View.GONE
 //                content_progerss_re.visibility = View.VISIBLE
 //                AgesTool.showPopup(false)
-                setBackWallpaper(BitmapFactory.decodeResource(resources,url))
+                if(url != -1) {
+                    setBackWallpaper(BitmapFactory.decodeResource(resources, url))
+                }else{
+                    setBackWallpaper(BitmapFactory.decodeStream(contentResolver.openInputStream(imageUri!!)))
+                }
             }
             R.id.content_set_setscreen -> {
                 content_set_ll.visibility = View.GONE
 //                content_progerss_re.visibility = View.VISIBLE
 //                AgesTool.showPopup(false)
-                setLockWallpaper7(BitmapFactory.decodeResource(resources,url))
+                if(url != -1) {
+                    setLockWallpaper7(BitmapFactory.decodeResource(resources, url))
+                }else{
+                    setLockWallpaper7(BitmapFactory.decodeStream(contentResolver.openInputStream(imageUri!!)))
+                }
             }
             R.id.content_set_setboth -> {
                 content_set_ll.visibility = View.GONE
 //                content_progerss_re.visibility = View.VISIBLE
 //                AgesTool.showPopup(false)
-                setAllWallpaper(BitmapFactory.decodeResource(resources,url))
+                if(url != -1) {
+                    setAllWallpaper(BitmapFactory.decodeResource(resources, url))
+                }else{
+                    setAllWallpaper(BitmapFactory.decodeStream(contentResolver.openInputStream(imageUri!!)))
+                }
             }
             R.id.content_set_ll -> {
                 content_set_ll.visibility = View.GONE

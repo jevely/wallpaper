@@ -64,6 +64,19 @@
             android:name="com.good.perfect.free.hao.wallpaper.activity.ShowActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="nosensor" />
+
+        <!--7.0 uri适配-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.package.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path">
+
+            </meta-data>
+        </provider>
     </application>
 
 </manifest>

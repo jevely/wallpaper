@@ -190,7 +190,7 @@ class MainAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.View
 
             main_adapter_iv.setOnClickListener {
                 val intent = Intent(context, ShowActivity::class.java)
-                intent.putExtra("url", imageUrl)
+                intent.putExtra("url", imageUrl.toString())
                 context.startActivity(intent)
             }
 

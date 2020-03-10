@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--system 相册 path:如果使用私有存储的话自定义一个文件路径比如/pigphoto-->
+    <external-path name="my_images" path="DCIM" />
+</paths>
